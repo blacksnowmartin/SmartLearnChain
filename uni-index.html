@@ -1,0 +1,49 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>University Payment</h1>
+    </header>
+
+    <main>
+        <section class="payment-section">
+            <h2>Select a Course to Pay</h2>
+            <label for="courseDropdown">Choose a Course:</label>
+            <select id="courseDropdown">
+                <option value="course1">Data Science - 10 ICP</option>
+                <option value="course2">Computer Science - 35 ICP</option>
+                <option value="course3">Software Development - 30 ICP</option>
+                <option value="course3">Environmental Sciences - 20 ICP</option>
+                <option value="course3">Civil Engineering - 35 ICP</option>
+                <option value="course3">Pyschology Arts - 25 ICP</option>
+                <option value="course3">Biomedicine Engineering - 20 ICP</option>
+                <option value="course3">Education Arts - 15 ICP</option>
+
+                <!-- Add more courses as needed -->
+            </select>
+            <button onclick="payCourse()">Pay Course</button>
+        </section>
+    </main>
+
+    <footer>
+        <section class="links-section">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="buyTokens.html">Buy ICP Tokens</a></li>
+                <li><a href="registerUser.html">Register User</a></li>
+                <li><a href="withdrawFunds.html">Withdraw Funds</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

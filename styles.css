@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #deca12;
+    background-color: ; /* Gold */
+    color: #a138ce; /* Dark Violet */
+}
+
+header {
+    background-color: #a138ce;
+    color: #deca12;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+.payment-section,
+.content-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #9400d3;
+    color: #f0e68c;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #800080;
+}
+
+footer {
+    background-color: #9400d3;
+    color: #f0e68c;
+    padding: 10px;
+    text-align: center;
+}
+
+.links-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-section li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    color: #f0e68c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
