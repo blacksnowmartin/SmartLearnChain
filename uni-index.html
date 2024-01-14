@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Payment</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('th.jpg'); /* Replace 'background.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 20px; /* Add padding to the top of the body */
+            padding-bottom: 20px; /* Add padding to the bottom of the body */
+        }
+
+        header {
+            text-align: center;
+            color: #fff;
+            padding: 20px; /* Add padding to the header */
+        }
+
+        main {
+            padding: 20px; /* Add padding to the main content */
+        }
+
+        .payment-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px; /* Add margin at the bottom of the payment section */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #eabf32;
+            color: #fff;
+            text-align: center;
+            padding: 20px; /* Add padding to the footer */
+        }
+
+        .links-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links-section li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,20 +79,16 @@
     <main>
         <section class="payment-section">
             <h2>Select a Course to Pay</h2>
-            <label for="courseDropdown">Choose a Course:</label>
-            <select id="courseDropdown">
-                <option value="course1">Data Science - 10 ICP</option>
-                <option value="course2">Computer Science - 35 ICP</option>
-                <option value="course3">Software Development - 30 ICP</option>
-                <option value="course3">Environmental Sciences - 20 ICP</option>
-                <option value="course3">Civil Engineering - 35 ICP</option>
-                <option value="course3">Pyschology Arts - 25 ICP</option>
-                <option value="course3">Biomedicine Engineering - 20 ICP</option>
-                <option value="course3">Education Arts - 15 ICP</option>
-
-                <!-- Add more courses as needed -->
-            </select>
-            <button onclick="payCourse()">Pay Course</button>
+            <ul>
+                <li><a href="datasciencepayment.html">Data Science - 10 ICP</a></li>
+                <li><a href="computerSciencePayment.html">Computer Science - 35 ICP</a></li>
+                <li><a href="softwareDevelopmentPayment.html">Software Development - 30 ICP</a></li>
+                <li><a href="environmentalSciencesPayment.html">Environmental Sciences - 20 ICP</a></li>
+                <li><a href="civilEngineeringPayment.html">Civil Engineering - 35 ICP</a></li>
+                <li><a href="psychologyArtsPayment.html">Psychology Arts - 25 ICP</a></li>
+                <li><a href="biomedicineEngineeringPayment.html">Biomedicine Engineering - 20 ICP</a></li>
+                <li><a href="educationArtsPayment.html">Education Arts - 15 ICP</a></li>
+            </ul>
         </section>
     </main>
 
@@ -43,7 +102,5 @@
             </ul>
         </section>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
