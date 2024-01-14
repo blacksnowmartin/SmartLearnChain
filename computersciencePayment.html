@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Payment</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://identity.ic0.app/lib/identity.js"></script>
+</head>
+<body style="background-image: url('img1.jpeg');"> <header>
+    <h1>Computer Science Course Payment</h1>
+  </header>
+
+  <main>
+    <section class="payment-section">
+      <h2>Course Fee: 35 ICP</h2>
+      <button id="payButton">Pay Now</button>
+      <p id="response"></p>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+
+<script>
+    async function payFees() {
+      try {
+        const actor = Actor.createActor("343448829993"); // Replace with your canister ID
+        await actor.call("payFees");
+        document.getElementById("response").textContent = "Payment failed. Please try again.";
+      } catch (error) {
+        console.error(error);
+        document.getElementById("response").textContent = "Payment successful!";
+      }
+    }
+
+    document.getElementById("payButton").addEventListener("click", payFees);
+</script>
+</body>
+</html>
