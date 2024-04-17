@@ -26,14 +26,20 @@
 <script>
     async function payFees() {
       try {
-        const actor = Actor.createActor("343448829993"); // Replace with your canister ID
+        const actor = Actor.createActor("343448829993", { agentOptions: { ignoreSignificant: true } }); // Replace with your canister ID
         await actor.call("payFees");
-        document.getElementById("response").textContent = "Payment failed. Please try again.";
-      } catch (error) {
-        console.error(error);
         document.getElementById("response").textContent = "Payment successful!";
+      } catch (error) {
+        if (error.message === "Transaction denied: insufficient funds") {
+          document.getElementById("response").textContent = "Payment failed. Please try again.";
+        } else {
+          console.error(error);
+          document.getElementById("response").textContent = "Payment failed. Please try again.";
+        }
       }
     }
+
+
 
     document.getElementById("payButton").addEventListener("click", payFees);
 </script>
