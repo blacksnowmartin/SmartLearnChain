@@ -13,7 +13,16 @@ actor Main {
     // Ensure caller has sufficient balance in user ledger
     if (userLedger.balance(caller) < 30) {
       throw InsufficientFunds();
-    }
+    } else {
+      // Deduct 30 tokens from caller's balance in user ledger
+      let success = userLedger.withdraw(caller, 30);
+      if (success) {
+        // Transfer 30 tokens to university ledger
+        universityLedger.deposit(Principal.fromActor(Main), 30); // Deposit to self
+      } else {
+        throw InsufficientFunds();
+      }
+
 
     // Deduct 30 tokens from caller's balance in user ledger
     userLedger.withdraw(caller, 30);
