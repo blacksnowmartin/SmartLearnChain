@@ -407,6 +407,18 @@ contract SmartChainLearn is IERC20, Ownable {
 }
 
 
+    /**
+     * @dev Creates `amount` tokens and assigns them to `account`, increasing
+     * the total supply.
+     *
+     * Emits a {Transfer} event with `from` set to the zero address.
+     *
+     * Requirements:
+     *
+     * - `account` cannot be the zero address.
+     */
+
+
 
 
 
