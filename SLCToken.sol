@@ -1,32 +1,5 @@
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.14;
 
-/**
- * @title SmartChainLearn ERC20 Token Contract
- * @dev This contract is a basic ERC20 token with some added functionality.
- *      It is intended to be used as a template for new projects.
- *
- *      The contract will be used to create a new token that will be used
- *      to incentivize people to participate in a community. The token will
- *      be used to represent ownership of the community's digital assets.
- *      The token is NOT meant to be a store of value.
- *
- *      The contract is based on the OpenZeppelin ERC20 contract and has been
- *      modified to add functionality that is specific to the needs of the
- *      community.
- *
- *      The contract has been tested on the Ethereum blockchain using the
- *      Remix online compiler.
- *
- * @author blacksnowmartin
- */
-
-
-// File: contracts/IERC20.sol
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
 interface IERC20 {
     /**
      * @dev Emitted when `value` tokens are moved from one account (`from`) to
@@ -215,16 +188,18 @@ abstract contract Ownable is Context {
 // File: contracts/SafeMath.sol
 
 // CAUTION
-// This version of SafeMath should only be used with Solidity 0.8 or later,
-// because it relies on the compiler's built in overflow checks.
+// This version of SafeMath should only be used with Solidity 0.8.0 and later,
+// because it depends on the compiler's built in overflow checks.
 
 /**
  * @dev Wrappers over Solidity's arithmetic operations.
  *
- * NOTE: `SafeMath` is generally not needed starting with Solidity 0.8, since the compiler
+ * NOTE: `SafeMath` is no longer needed starting with Solidity 0.8. The compiler
  * now has built in overflow checking.
- */
-library SafeMath {
-    /**
-     * @dev Returns the addition of two unsigned integers, with an overflow flag.
+ *
+ * Provides methods for working with unsigned integers: add, sub, mul,
+ * div, and mod. The operations are safe, and will revert the transaction
+ * if something goes wrong (like trying to divide by zero).
+ *
+ * 
 
