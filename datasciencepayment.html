@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Science Payment</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://identity.ic0.app/lib/identity.js"></script>
 </head>
-<body style="background-image: url('img1.jpeg');"> <header>
-    <h1>Data Science Payment</h1>
-  </header>
+<body style="background-image: url('img1.jpeg');">
 
-  <main>
-    <section class="payment-section">
-      <h2>Course Fee: 10 ICP</h2>
-      <button id="payButton">Pay Now</button>
-      <p id="response"></p>
-    </section>
-  </main>
+<div class="jumbotron text-center">
+  <h1>Data Science Payment</h1>
+  <p>Pay your course fees securely and easily</p>
+</div>
 
-  <footer>
-  </footer>
+<div class="container">
+  <div class="row">
+    <main class="mx-auto">
+      <section class="payment-section mb-4">
+        <h2>Course Fee: 10 ICP</h2>
+        <button id="payButton" class="btn btn-primary">Pay Now</button>
+        <p id="response" class="text-center"></p>
+      </section>
+    </main>
+  </div>
+</div>
 
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">All rights reserved &copy; 2022</span>
+  </div>
+</footer>
 
 <script>
     async function payFees() {
@@ -39,3 +48,4 @@
 </script>
 </body>
 </html>
+
