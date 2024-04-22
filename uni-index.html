@@ -4,106 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Payment</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('gif.gif') /* Replace 'yourgif.gif' with your GIF file path */;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding-top: 20px; /* Add padding to the top of the body */
-            padding-bottom: 20px; /* Add padding to the bottom of the body */
-        }
-
-        header {
-            text-align: center;
-            color: #fff;
-            padding: 20px; /* Add padding to the header */
-        }
-
-        main {
-            padding: 20px; /* Add padding to the main content */
-        }
-
-        .payment-section {
-            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px; /* Add margin at the bottom of the payment section */
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #eabf32;
-            color: #fff;
-            text-align: center;
-            padding: 20px; /* Add padding to the footer */
-        }
-
-        .links-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .links-section li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>University Payment</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">University Payment</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buyTokens.html">Buy ICP Tokens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registerUser.html">Register User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="withdrawFunds.html">Withdraw Funds</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section class="payment-section">
-            <h2>Select a Course to Pay</h2>
-            <ul>
-                <li><a href="datasciencepayment.html">Data Science - 10 ICP</a></li>
-                <li><a href="computerSciencePayment.html">Computer Science - 35 ICP</a></li>
-                <li><a href="softwareDevelopmentPayment.html">Software Development - 30 ICP</a></li>
-                <li><a href="environmentalSciencesPayment.html">Environmental Sciences - 20 ICP</a></li>
-                <li><a href="civilEngineeringPayment.html">Civil Engineering - 35 ICP</a></li>
-                <li><a href="psychologyArtsPayment.html">Psychology Arts - 25 ICP</a></li>
-                <li><a href="biomedicineEngineeringPayment.html">Biomedicine Engineering - 20 ICP</a></li>
-                <li><a href="educationArtsPayment.html">Education Arts - 15 ICP</a></li>
-            </ul>
-        </section>
+        <div class="container">
+            <section class="payment-section">
+                <h2>Select a Course to Pay</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="datasciencepayment.html">Data Science - 10 ICP</a></li>
+                    <li class="list-group-item"><a href="computerSciencePayment.html">Computer Science - 35 ICP</a></li>
+                    <li class="list-group-item"><a href="softwareDevelopmentPayment.html">Software Development - 30 ICP</a></li>
+                    <li class="list-group-item"><a href="environmentalSciencesPayment.html">Environmental Sciences - 20 ICP</a></li>
+                    <li class="list-group-item"><a href="civilEngineeringPayment.html">Civil Engineering - 35 ICP</a></li>
+                    <li class="list-group-item"><a href="psychologyArtsPayment.html">Psychology Arts - 25 ICP</a></li>
+                    <li class="list-group-item"><a href="biomedicineEngineeringPayment.html">Biomedicine Engineering - 20 ICP</a></li>
+                    <li class="list-group-item"><a href="educationArtsPayment.html">Education Arts - 15 ICP</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <footer>
+    <footer class="container">
         <section class="links-section">
             <h3>Useful Links</h3>
-            <ul>
-                <li><a href="buyTokens.html">Buy ICP Tokens</a></li>
-                <li><a href="registerUser.html">Register User</a></li>
-                <li><a href="withdrawFunds.html">Withdraw Funds</a></li>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="buyTokens.html">Buy ICP Tokens</a></li>
+                <li class="list-group-item"><a href="registerUser.html">Register User</a></li>
+                <li class="list-group-item"><a href="withdrawFunds.html">Withdraw Funds</a></li>
             </ul>
         </section>
     </footer>
-    <footer>
+    <footer class="container">
         <p>Blacksnow Martin 2024</p>
     </footer>
 </body>
 </html>
+
