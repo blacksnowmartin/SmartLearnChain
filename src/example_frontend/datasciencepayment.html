@@ -6,23 +6,43 @@
   <title>Data Science Payment</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://identity.ic0.app/lib/identity.js"></script>
+  <style>
+    body {
+      background-image: url('img1.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
-<body style="background-image: url('img1.jpeg');">
+<body>
 
-<div class="jumbotron text-center">
-  <h1>Data Science Payment</h1>
-  <p>Pay your course fees securely and easily</p>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Data Science Payment</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<div class="container">
-  <div class="row">
-    <main class="mx-auto">
-      <section class="payment-section mb-4">
-        <h2>Course Fee: 10 ICP</h2>
-        <button id="payButton" class="btn btn-primary">Pay Now</button>
-        <p id="response" class="text-center"></p>
-      </section>
-    </main>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Course Fee: 10 ICP</h2>
+          <p class="card-text">Pay your course fees securely and easily</p>
+          <button id="payButton" class="btn btn-primary btn-block">Pay Now</button>
+          <p id="response" class="text-center"></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -33,19 +53,18 @@
 </footer>
 
 <script>
-    async function payFees() {
-      try {
-        const actor = Actor.createActor("your-canister-id"); // Replace with your canister ID
-        await actor.call("payFees");
-        document.getElementById("response").textContent = "Payment successful!";
-      } catch (error) {
-        console.error(error);
-        document.getElementById("response").textContent = "Payment failed. Please try again.";
-      }
+  async function payFees() {
+    try {
+      const actor = Actor.createActor("your-canister-id"); // Replace with your canister ID
+      await actor.call("payFees");
+      document.getElementById("response").textContent = "Payment successful!";
+    } catch (error) {
+      console.error(error);
+      document.getElementById("response").textContent = "Payment failed. Please try again.";
     }
+  }
 
-    document.getElementById("payButton").addEventListener("click", payFees);
+  document.getElementById("payButton").addEventListener("click", payFees);
 </script>
 </body>
 </html>
-
