@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { example_backend } from 'declarations/example_backend';
+import { example_backend } from '../../declarations/example_backend';
 import logo from './logo2.svg';
 
 class App {
