@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { example_backend } from '../../declarations/example_backend';
+import { smartlearnchain_backend } from '../../declarations/smartlearnchain_backend';
 import logo from './logo2.svg';
 
 class App {
@@ -12,7 +12,7 @@ class App {
   #handleSubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value;
-    this.greeting = await example_backend.greet(name);
+    this.greeting = await smartlearnchain_backend.greet(name);
     this.#render();
   };
 

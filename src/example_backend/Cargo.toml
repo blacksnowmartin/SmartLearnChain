@@ -1,5 +1,5 @@
 [package]
-name = "example_backend"
+name = "smartlearnchain_backend"
 version = "0.1.0"
 edition = "2021"
 

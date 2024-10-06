@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "example_backend": {
-      "candid": "src/example_backend/example_backend.did",
-      "package": "example_backend",
+    "smartlearnchain_backend": {
+      "candid": "src/smartlearnchain_backend/smartlearnchain_backend.did",
+      "package": "smartlearnchain_backend",
       "type": "rust"
     },
-    "example_frontend": {
+    "smartlearnchain_frontend": {
       "dependencies": [
-        "example_backend"
+        "smartlearnchain_backend"
       ],
       "source": [
-        "src/example_frontend/dist"
+        "src/smartlearnchain_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "example_frontend"
+      "workspace": "smartlearnchain_frontend"
     }
   },
   "defaults": {

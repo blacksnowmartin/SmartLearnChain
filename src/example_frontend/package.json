@@ -1,10 +1,10 @@
 {
-  "name": "example_frontend",
+  "name": "smartlearnchain_frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create example_backend && dfx generate example_backend && dfx deploy",
+    "setup": "npm i && dfx canister create smartlearnchain_backend && dfx generate smartlearnchain_backend && dfx deploy",
     "start": "vite --port 3000",
     "prebuild": "dfx generate",
     "build": "tsc && vite build",

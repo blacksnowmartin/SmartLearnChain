@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "src/example_backend"
+    "src/smartlearnchain_backend"
 ]
 resolver = "2"
