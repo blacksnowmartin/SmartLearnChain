@@ -1,5 +1,0 @@
-[workspace]
-members = [
-    "src/smartlearnchain_backend"
-]
-resolver = "2"
