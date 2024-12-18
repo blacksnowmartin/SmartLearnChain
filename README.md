@@ -1,5 +1,7 @@
 Please note that this document is aimed at explaining how to set up your computer to run this project locally at your machine. 
 
+The details of the wool Project are found in the src folder with the front end. 
+
 ### `smartlearnchain`
 
 Welcome to your new `smartlearnchain` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
