@@ -1,6 +1,6 @@
 Please note that this document is aimed at explaining how to set up your computer to run this project locally at your machine. 
 
-The details of the wool Project are found in the src folder with the front end. 
+The details of the whole Project are found in the src folder with the front end. 
 
 ### `smartlearnchain`
 
