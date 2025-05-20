@@ -35,3 +35,5 @@ actor Main {
     return universityLedger.balance(Principal.fromActor(Main));
   }
 }
+
+// Know how to transfer this code to Solidity smart contract
