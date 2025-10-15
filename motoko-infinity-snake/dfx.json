@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "game_backend": {
+      "main": "src/game_backend/main.mo",
+      "type": "motoko"
+    },
+    "game_frontend": {
+      "build": "npm install --workspace game_frontend && npm run build --workspace game_frontend",
+      "dependencies": [
+        "game_backend"
+      ],
+      "source": [
+        "src/game_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "game_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
