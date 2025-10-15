@@ -1,5 +1,5 @@
 import React from 'react';
-import { game_backend } from 'declarations/game_backend';
+// import { game_backend } from 'declarations/game_backend';
 import SnakeGameComponent from './components/snakegame'; // Import the SnakeGameComponent
 
 function App() {

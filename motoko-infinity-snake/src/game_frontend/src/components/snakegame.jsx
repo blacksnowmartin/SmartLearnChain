@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { game_backend } from '../../../declarations/game_backend';
+// import { game_backend } from '../../../declarations/game_backend';
 import '../SnakeGame.scss';
 
 const GRID_SIZE = 30;
