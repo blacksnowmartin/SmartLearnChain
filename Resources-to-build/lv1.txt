@@ -1,4 +1,4 @@
-The Internet Computer Protocol (ICP) is a secure and transparent blockchain-based network that can be used to host entire programs and their data. Applications hosted on ICP are referred to as decentralized applications, often abbreviated to dapps.
+89The Internet Computer Protocol (ICP) is a secure and transparent blockchain-based network that can be used to host entire programs and their data. Applications hosted on ICP are referred to as decentralized applications, often abbreviated to dapps.
 
 Dapps are created by the development and deployment of smart contracts, which are known as canisters on ICP. Each canister is hosted on one of the network's subnets, which is a group of nodes running their own independent instance of the network's protocol.
 
@@ -69,3 +69,6 @@ Internet Identity
 ICP has pioneered a secure and advanced form of cryptographic authentication known as Internet Identity (II). II is designed to work across all user devices and protect user privacy as a means to replace traditional usernames and passwords, which can be hard to manage and easy to exploit.
 
 II can be integrated with dapps on ICP and helps secure online identities by providing protection from websites collecting data.
+
+
+Introduce ways of using ICP ninja to create the new interface 
