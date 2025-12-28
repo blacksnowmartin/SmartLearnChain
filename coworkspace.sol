@@ -1,4 +1,4 @@
-# CoworkingSpaceContract
+# CoworkingSpaceContract code
 
 pragma solidity ^0.8.0;
 
