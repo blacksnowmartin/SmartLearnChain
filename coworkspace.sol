@@ -1,4 +1,4 @@
-# CoworkingSpaceContract code
+# CoworkingSpaceContract
 
 pragma solidity ^0.8.0;
 
@@ -43,6 +43,7 @@ contract CoworkingSpace {
         emit SpaceBooked(bookingCount, _spaceId, msg.sender, _startTime, _endTime);
     }
 
+# Think of a way of adding a functionality
     function updateSpaceAvailability(uint _spaceId, bool _isAvailable) public {
         spaces[_spaceId].isAvailable = _isAvailable;
         emit SpaceAvailabilityUpdated(_spaceId, _isAvailable);
