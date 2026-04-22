@@ -72,4 +72,5 @@ II can be integrated with dapps on ICP and helps secure online identities by pro
 
 
 Introduce ways of using ICP ninja to create the new interface....
-Formulate a way to collaborate with Edupay and build a new UI with Caffeine 
+Formulate a way to collaborate with Edupay and build a new UI with Caffeine
+Authored and revised by Martin KITONGA. 
